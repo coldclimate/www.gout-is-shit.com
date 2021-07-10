@@ -1,0 +1,3 @@
+[submodule "www.gout-is-shit.com/themes/gruvhugo"]
+	path = www.gout-is-shit.com/themes/gruvhugo
+	url = https://gitlab.com/avron/gruvhugo.git
