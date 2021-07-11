@@ -1,4 +1,9 @@
-# Gout Is Shit
+---
+title: "Gout Is Shit"
+date: 2021-07-10T12:25:21+01:00
+draft: false
+---
+# Gout Is Shit mate
 
 It really is.
 
