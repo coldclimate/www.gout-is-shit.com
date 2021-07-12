@@ -7,7 +7,7 @@ draft: false
 
 It really is.
 
-People thing it's caused by high living, rich food and drinking port.  People made Henry the 8th jokes.  It's debilitating, depressing and it hurts like a mother fucker.
+People think it's caused by high living, rich food and drinking port.  People made Henry the 8th jokes.  It's debilitating, depressing and it hurts like a mother fucker.
 
 There's lots of information out there about the causes of gout and cures for it.  Lots of the information is contradictory, lots is tied to health fads and people pushing their own supplements.  Even reputable sources seem to contradict themselves at times.  People's experiences differ greatly.
 
