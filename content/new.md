@@ -26,18 +26,26 @@ Not really.  Here are some links and information from personal experience that m
 * Some people think cherry juice and especially tart cherry can help settle a gout flair up.  I've had some relief in the past, though I've also been taking ibuprofen and cutting my diet back to essentials at the same time, so it's difficult to say what had the most effect.
 * Cooling the affected joint with ice gave me some relief but was in itself painful eventually.
 
-## Data gathering and showing beta
+## Data gathering and showing it (beta)
+
+{{% survey_header %}}
 
 ### About you
+
 {{% survey_you %}}
 
 ### What seems to make your gout more likely/worse?
+
 {{% survey_worse %}}
 
 ### What seems to help?
+
 {{% survey_better %}}
 
+{{% survey_footer %}}
+
 ### Results
+
 {{% survey_results %}}
 
 ## Who are you and why are you building Gout Is Shit?
