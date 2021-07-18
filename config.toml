@@ -21,6 +21,9 @@ defaultExtension= "html"
 # hugo new command. "toml", "yaml", or "json"
 metaDataFormat= "yaml"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [taxonomies]
   tag      = "tags"
   category = "categories"
