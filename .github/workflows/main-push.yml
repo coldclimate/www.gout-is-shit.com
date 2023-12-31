@@ -2,7 +2,7 @@ name: master_push
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 jobs:
   build_test_deploy:
     runs-on: ubuntu-latest
@@ -23,4 +23,4 @@ jobs:
           aws-region: eu-west-1
       - name: Copy files to the test website with the AWS CLI
         run: |
-            aws s3 sync ./public/ s3://www.goutisshit.com --acl public-read --delete
+            aws s3 sync ./public/ s3://www.gout-is-shit.com --acl public-read --delete
