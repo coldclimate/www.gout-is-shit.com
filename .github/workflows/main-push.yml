@@ -15,12 +15,12 @@ jobs:
           chmod a+x hugo
       - name: Build
         run: ./hugo  --cleanDestinationDir  --gc
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.KEY }}
-          aws-secret-access-key: ${{ secrets.SECRET }}
-          aws-region: eu-west-1
-      - name: Copy files to the test website with the AWS CLI
-        run: |
-            aws s3 sync ./public/ s3://www.gout-is-shit.com --acl public-read --delete
+      - name: copy file via ssh password
+          uses: appleboy/scp-action@v0.1.7
+          with:
+            host: ${{ secrets.scphost }}
+            username: ${{ secrets.scpuser }}
+            key: ${{ secrets.scpkey }}
+            port: 22
+            source: "public/*"
+            target: /home/web/www.gout-is-shit.com
