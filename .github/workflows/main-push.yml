@@ -27,4 +27,4 @@ jobs:
           key: ${{ secrets.scpkey }}
           port: 22
           source: public/*
-          target: /home/web/www.gout-is-shit.com
+          target: /home/web/www.gout-is-shit.com/
