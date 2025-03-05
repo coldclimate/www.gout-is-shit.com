@@ -1,26 +1,30 @@
+---
 name: master_push
 on:
   push:
     branches:
-      - 'main'
+      - main
 jobs:
   build_test_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: SetupHugo
-        run: |
-          curl -LO https://github.com/gohugoio/hugo/releases/download/v0.81.0/hugo_0.81.0_Linux-64bit.tar.gz
+        run: >
+          curl -LO
+          https://github.com/gohugoio/hugo/releases/download/v0.81.0/hugo_0.81.0_Linux-64bit.tar.gz
+
           tar -vzxf hugo_0.81.0_Linux-64bit.tar.gz
+
           chmod a+x hugo
       - name: Build
         run: ./hugo  --cleanDestinationDir  --gc
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.7
-          with:
-            host: ${{ secrets.scphost }}
-            username: ${{ secrets.scpuser }}
-            key: ${{ secrets.scpkey }}
-            port: 22
-            source: "public/*"
-            target: /home/web/www.gout-is-shit.com
+        with:
+          host: ${{ secrets.scphost }}
+          username: ${{ secrets.scpuser }}
+          key: ${{ secrets.scpkey }}
+          port: 22
+          source: public/*
+          target: /home/web/www.gout-is-shit.com
