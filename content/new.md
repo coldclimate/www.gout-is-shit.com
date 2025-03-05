@@ -5,7 +5,7 @@ draft: false
 ---
 # Gout Is Shit
 
-It really is.
+It really is innit?
 
 People thing it's caused by high living, rich food and drinking port.  People made Henry the 8th jokes.  It's debilitating, depressing and it hurts like a mother fucker.
 
