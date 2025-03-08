@@ -26,5 +26,6 @@ jobs:
           username: ${{ secrets.scpuser }}
           key: ${{ secrets.scpkey }}
           port: 22
-          source: ./public/*
+          working-directory: ./public/
+          source: .
           target: /home/web/www.gout-is-shit.com/
