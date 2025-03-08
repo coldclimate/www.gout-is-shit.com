@@ -20,12 +20,9 @@ jobs:
       - name: Build
         run: ./hugo  --cleanDestinationDir  --gc
       - name: copy file via ssh password
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.scphost }}
-          username: ${{ secrets.scpuser }}
-          key: ${{ secrets.scpkey }}
-          port: 22
-          source: ./public/*
-          target: /home/web/www.gout-is-shit.com/
-          strip_components: 1
+        uses: up9cloud/action-rsync@master
+        env:
+          HOST: ${{ secrets.scphost }}
+          KEY: ${{ secrets.scpkey }}
+          TARGET: /home/web/www.gout-is-shit.com/
+          SOURCE: ./public/
