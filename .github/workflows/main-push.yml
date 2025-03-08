@@ -23,6 +23,7 @@ jobs:
         uses: up9cloud/action-rsync@master
         env:
           HOST: ${{ secrets.scphost }}
+          USER: ${{ secrets.scpuser }}
           KEY: ${{ secrets.scpkey }}
           TARGET: /home/web/www.gout-is-shit.com/
           SOURCE: ./public/
